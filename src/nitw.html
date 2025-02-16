@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Lora:wght@700&family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        header:hover {
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: transform 0.3s;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+        .hero {
+            padding: 100px 50px 50px;
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: white;
+            margin-top: 80px;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            transform: scale(1.1);
+        }
+        .blog {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .post {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .post:hover {
+            transform: scale(1.05);
+        }
+        .categories {
+            padding: 20px;
+        }
+        .category {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .category:hover {
+            background: #0056b3;
+        }
+        .subscribe {
+            padding: 20px;
+        }
+        .subscribe-btn {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .subscribe-btn:hover {
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+        .social-icons span {
+            margin: 0 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .social-icons span:hover {
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">GameZone</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1><span>Creative</span> Blog Experience</h1>
+        <button class="cta-button">Read More</button>
+    </section>
+    
+    <section class="blog">
+        <div class="post"> <img src="post1.jpg" alt="Blog Post 1"> <h2>Post Title 1</h2> </div>
+        <div class="post"> <img src="post2.jpg" alt="Blog Post 2"> <h2>Post Title 2</h2> </div>
+        <div class="post"> <img src="post3.jpg" alt="Blog Post 3"> <h2>Post Title 3</h2> </div>
+    </section>
+    
+    <section class="categories">
+        <button class="category">Tech</button>
+        <button class="category">Lifestyle</button>
+        <button class="category">Travel</button>
+    </section>
+    
+    <section class="subscribe">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <button class="subscribe-btn">Subscribe</button>
+    </section>
+    
+    <footer>
+        <div class="social-icons">
+            <span>Facebook</span>
+            <span>Twitter</span>
+            <span>Instagram</span>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
